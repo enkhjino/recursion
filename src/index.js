@@ -18,3 +18,13 @@ function countDown1(num) {
 }
 
 //countDown1(5)
+
+//second function
+function sumRange(num) {
+  if (num === 1) return 1;
+  return num + sumRange(num - 1);
+}
+//console.log(sumRange(3))
+// return 3+sumRange(2)  -> 3+3=6
+//    return 2+sumRange(1) ->3
+//                return 1
