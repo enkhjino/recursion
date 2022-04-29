@@ -49,3 +49,22 @@ function factorialRec(num) {
 }
 
 //console.log(factorialRec(4))
+
+//use helper functions to make it easier
+//given an array of nums return the odd numbers in an array
+
+function oddValues(arr) {
+  let result = [];
+  function helper(helperInput) {
+    //console.log(helperInput)
+    if (helperInput.length === 0) return;
+    if (helperInput[0] % 2 !== 0) {
+      result.push(helperInput[0]);
+    }
+    helper(helperInput.slice(1));
+  }
+  helper(arr);
+  return result;
+}
+
+//console.log(oddValues([2,3,4,5,7,7]))
