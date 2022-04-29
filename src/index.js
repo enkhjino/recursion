@@ -28,3 +28,16 @@ function sumRange(num) {
 // return 3+sumRange(2)  -> 3+3=6
 //    return 2+sumRange(1) ->3
 //                return 1
+
+//third FACTORIAL
+//LOOP way
+
+function factorial(num) {
+  var result = 1;
+  for (var i = num; i > 0; i--) {
+    result *= i;
+  }
+  return result;
+}
+
+//console.log(factorial(4))
