@@ -68,3 +68,11 @@ function oddValues(arr) {
 }
 
 //console.log(oddValues([2,3,4,5,7,7]))
+
+function power(base, exponent) {
+  if (exponent === 0) return 1;
+  console.log(exponent);
+  return base * power(base, exponent - 1);
+}
+
+console.log(power(3, 10));
