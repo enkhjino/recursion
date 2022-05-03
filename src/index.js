@@ -75,4 +75,19 @@ function power(base, exponent) {
   return base * power(base, exponent - 1);
 }
 
-console.log(power(3, 10));
+//console.log(power(3, 10));
+
+//write a function called productOfArray which takes in an array of numbers and returns the product of them all.
+
+function productOfArray(arr) {
+  // var product=1;
+  // for(var i=0; i<arr.length; i++){
+  //   product*=arr[i];
+  // }
+  // return product;
+  if (arr.length === 0) return 1;
+  //console.log(arr.length)
+  return arr[0] * productOfArray(arr.slice(1));
+}
+
+console.log(productOfArray([1, 2, 3, 10])); // 60
