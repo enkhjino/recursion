@@ -90,4 +90,12 @@ function productOfArray(arr) {
   return arr[0] * productOfArray(arr.slice(1));
 }
 
-console.log(productOfArray([1, 2, 3, 10])); // 60
+//console.log(productOfArray([1, 2, 3, 10])); // 60
+
+//write a function called recursiveRange which accepts a number and adds up all the numers from 0 to the number passed to the function.
+
+function recursiveRange(num) {
+  if (num === 0) return 0;
+  return num + recursiveRange(num - 1);
+}
+console.log(recursiveRange(10)); // 55
